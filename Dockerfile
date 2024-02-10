@@ -6,7 +6,7 @@ RUN mkdir /src
 ADD . /src
 WORKDIR /src
 
-RUN go build -o /tmp/http-server ./cmd/http-server/main.go
+RUN go build -o /tmp/http-server ./src/main.go
 
 FROM alpine:edge
 
